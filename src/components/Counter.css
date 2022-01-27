@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    column-gap: 30px;
+}
+
+.btnContainer {
+    border: 2px solid deepskyblue;
+    padding: 10px;
+}
+
+h4 {
+    margin: 0;
+    text-align: center;
+}
