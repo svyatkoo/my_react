@@ -1,11 +1,18 @@
+import {Routes, Route} from "react-router-dom";
+
 import './App.css';
-import {Cars, Form} from "./components";
+import {CarsPage, HomePage} from "./pages";
+import {NotFoundPage} from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
     <div>
-      <Form />
-      <Cars />
+        <Routes>
+          <Route path={"/"} element={<HomePage/>} >
+            <Route path={"cars"} element={<CarsPage/>} />
+            <Route path={"*"} element={<NotFoundPage/>}/>
+          </Route>
+        </Routes>
     </div>
   );
 }
