@@ -1,0 +1,22 @@
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    padding: 30px;
+}
+
+a {
+    font-size: 36px;
+    text-decoration: none;
+    color: azure;
+}
+
+.active {
+    color: darkorange;
+    text-decoration: underline !important;
+}
+
+.main {
+    background-color: dodgerblue;
+}

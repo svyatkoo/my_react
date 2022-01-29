@@ -1,12 +1,13 @@
 import {Cars, Form} from "../../components";
+import "./cars.page.css";
 
 const CarsPage = () => {
     return (
         <div>
-            CarsPage
-            <Form />
+            <h2>CarsPage</h2>
+            <Form/>
             <hr/>
-            <Cars />
+            <Cars/>
         </div>
     );
 };

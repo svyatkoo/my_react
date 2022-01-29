@@ -1,14 +1,19 @@
 import React from 'react';
 import {NavLink, Outlet} from "react-router-dom";
 
+import css from "../page.module.css";
+
 const HomePage = () => {
     return (
         <div>
-            HomePage
-            
-            <NavLink to={"cars"}>Cars</NavLink>
+            <div className={css.footer}>
+                <NavLink to={"cars"}>Cars</NavLink>
+                <NavLink to={"users"}>Users</NavLink>
+            </div>
 
-            <Outlet />
+            <div className={css.main}>
+                <Outlet/>
+            </div>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 .carsWrapper {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: deepskyblue;
     padding: 20px;
     column-gap: 30px;
     row-gap: 30px;
