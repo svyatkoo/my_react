@@ -14,7 +14,7 @@ const carSlice = createSlice({
         },
         deleteCar: (state, action) => {
             state.cars = state.cars.filter(car => car.id !== action.payload.id)
-        }
+        },
     }
 })
 
