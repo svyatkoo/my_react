@@ -1,0 +1,19 @@
+.mainWrapper {
+    margin: 0 auto;
+    width: 700px;
+    border: 2px solid gray;
+    padding: 30px;
+    background-color: deepskyblue;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.animalsWrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 300px;
+}
