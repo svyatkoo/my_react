@@ -1,7 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
+import {useEffect} from "react";
 
 import {Car} from "../Car/Car";
-import {useEffect} from "react";
 import {getAllCars} from "../../store";
 import "./cars.css";
 

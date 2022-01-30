@@ -6,8 +6,8 @@ const carsAxiosService = axios.create({
     baseURL: carsURL
 });
 
-const usersAxiosService = axios.create({
+const mainAxiosService = axios.create({
     baseURL: usersURL
 })
 
-export {carsAxiosService, usersAxiosService};
+export {carsAxiosService, mainAxiosService};

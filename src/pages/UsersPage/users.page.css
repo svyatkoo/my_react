@@ -1,0 +1,13 @@
+.usersPageWrapper {
+    padding: 0 30px 30px 30px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.mainBody {
+    display: flex;
+    justify-content: space-between;
+}

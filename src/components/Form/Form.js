@@ -18,8 +18,6 @@ const Form = () => {
     }, [id])
 
     const onSubmit = (data) => {
-        console.log("id");
-        console.log(id);
         if (id) {
             dispatch(updateCarThunk({id, data}))
             return;

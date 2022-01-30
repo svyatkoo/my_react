@@ -1,0 +1,7 @@
+.commentsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+    padding: 30px;
+}

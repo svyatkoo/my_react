@@ -9,6 +9,8 @@ const HomePage = () => {
             <div className={css.footer}>
                 <NavLink to={"cars"}>Cars</NavLink>
                 <NavLink to={"users"}>Users</NavLink>
+                <NavLink to={"posts"}>Posts</NavLink>
+                <NavLink to={"comments"}>Comments</NavLink>
             </div>
 
             <div className={css.main}>
