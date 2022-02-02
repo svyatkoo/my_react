@@ -13,7 +13,6 @@ const todoSlice = createSlice({
         save: (state, action) => {
             state.toDoList.push({id: new Date().getTime(), name: action.payload.todo, status: false});
             state.allCounter = state.allCounter + 1;
-            console.log(state.allCounter);
         },
         changeStatus: (state, action) => {
             const itemToDo = state.toDoList.find(item => item.id === action.payload.id);
@@ -27,6 +26,7 @@ const todoSlice = createSlice({
         },
         deleteItem: (state, action) => {
             state.toDoList = state.toDoList.filter(item => item.id !== action.payload.id);
+            state.allCounter = state.allCounter - 1;
         }
     },
     extraReducers: {}
