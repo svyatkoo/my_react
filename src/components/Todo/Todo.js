@@ -9,8 +9,8 @@ const Todo = ({item: {id, name, status}}) => {
 
     return (
         <div className="container">
-            <input type="checkbox" value={status} onChange={()=> dispatch(changeStatus({id}))}/>
-            <div className={status?"checked":""}>{name}</div>
+            <input type="checkbox" value={status} onChange={() => dispatch(changeStatus({id}))}/>
+            <div className={status ? "checked" : ""}>{name}</div>
             <button onClick={() => dispatch(deleteItem({id}))}>Delete</button>
         </div>
     );

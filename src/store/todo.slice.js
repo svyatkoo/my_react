@@ -9,13 +9,13 @@ const todoSlice = createSlice({
     initialState,
     reducers: {
         save: (state, action) => {
-            state.toDoList.push({id:  new Date().getTime(), name: action.payload.todo, status: false});
+            state.toDoList.push({id: new Date().getTime(), name: action.payload.todo, status: false});
         },
         changeStatus: (state, action) => {
             const itemToDo = state.toDoList.find(item => item.id === action.payload.id);
             itemToDo.status = !itemToDo.status;
         },
-        deleteItem:(state, action) => {
+        deleteItem: (state, action) => {
             state.toDoList = state.toDoList.filter(item => item.id !== action.payload.id);
         }
     },
